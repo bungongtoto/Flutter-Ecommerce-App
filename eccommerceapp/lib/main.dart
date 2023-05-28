@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:eccommerceapp/pages/home/main_food_page.dart';
 import 'package:eccommerceapp/pages/food/popular_food_detail.dart';
 import 'package:get/get.dart';
+import 'package:eccommerceapp/pages/food/recomended_food_detailed_page.dart';
+import 'helper/dependencies.dart' as dep;
 
-void main() {
+ main() {
+  // WidgetsFlutterBinding.ensureInitialized();
+  // await dep.init();
   runApp(const MyApp());
 }
 
@@ -20,7 +24,7 @@ class MyApp extends StatelessWidget {
         
         primarySwatch: Colors.blue,
       ),
-      home: const PopularFoodDetail(),
+      home: const MainFoodPage(),
     );
   }
 }
